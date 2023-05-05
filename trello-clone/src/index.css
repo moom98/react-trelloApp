@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 45px;
+    color: #121629;
+    font-weight: 600;
+}
+
+header{
+    padding: 10px 20px;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.app{
+    height: 100vh;
+    background: url('../src/images/trello-bg.jpg') no-repeat center center;
+}
+
+.taskCard{
+    width: 250px;
+    padding: 10px 25px;
+    margin: 10px 1%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.taskCardTitleInputArea{
+    margin-bottom: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.taskCardTitleInput{
+    width: 120%;
+    padding: 5px;
+    border: none;
+    outline-color: #eebbc3;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #121629;
+}
+
+.taskAddInput{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px #121629;
+    outline-color: #eebbc3;
+    font-size: 1.3rem;
+}
+
+.taskBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eebbc3;
+    border-radius: 5px;
+}
+
+.taskTrashButton{
+    padding: 3px;
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
+    transition: color .2s ease-in-out;
+}
+
+.taskTrashButton:hover{
+    color: white;
+}
