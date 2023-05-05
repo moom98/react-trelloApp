@@ -24,7 +24,7 @@ export const Tasks = ({ taskList, setTaskList }) => {
 		<div>
 			{/* ドラッグ可能エリア */}
 			<DragDropContext onDragEnd={handleDragEnd}>
-				{/* ドラッグ要素のwrapper */}
+				{/* ドラッグ要素のwrapper 中身は関数である必要がある*/}
 				<Droppable droppableId="droppable">
 					{(provided) => (
 						<div {...provided.droppableProps} ref={provided.innerRef}>
